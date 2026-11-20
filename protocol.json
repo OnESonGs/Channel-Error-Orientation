@@ -1,0 +1,299 @@
+{
+  "scope": "Frozen analysis inputs; no end-to-end regeneration or training is part of this package.",
+  "estimators": {
+    "joint_lmmse": "Joint spatial, time, frequency linear MMSE initialized from actual DM-RS observations and declared channel priors.",
+    "glsnet": "A-trained, frozen pilot-projected 1D network; real and imaginary traces share weights.",
+    "dncnn": "A-trained, frozen pilot-projected 1D residual denoiser; different training and capacity from GLSNet. No architecture ranking."
+  },
+  "profiles": {
+    "A": {
+      "profile": "NTN-TDL-A",
+      "development_slot_counts": {
+        "train": 4096,
+        "val": 2048
+      },
+      "development_generation_seed": 802002,
+      "test_slots": 4096,
+      "test_generation_seed": 802008,
+      "test_snr_db_range": [
+        15.0,
+        25.0
+      ],
+      "validation_llr_scales": {
+        "joint_lmmse": 0.9257198487959032,
+        "glsnet": 0.8629761682952615,
+        "dncnn": 0.8287368455260654
+      }
+    },
+    "B": {
+      "profile": "NTN-TDL-B",
+      "development_slot_counts": {
+        "train": 4096,
+        "val": 2048
+      },
+      "development_generation_seed": 802004,
+      "test_slots": 2048,
+      "test_generation_seed": 802009,
+      "test_snr_db_range": [
+        15.0,
+        25.0
+      ],
+      "validation_llr_scales": {
+        "joint_lmmse": 0.9230089353535754,
+        "glsnet": 0.6420484646287514,
+        "dncnn": 0.7942546117169748
+      }
+    },
+    "C": {
+      "profile": "NTN-TDL-C",
+      "development_slot_counts": {
+        "train": 4096,
+        "val": 2048
+      },
+      "development_generation_seed": 802006,
+      "test_slots": 2048,
+      "test_generation_seed": 802010,
+      "test_snr_db_range": [
+        15.0,
+        25.0
+      ],
+      "validation_llr_scales": {
+        "joint_lmmse": 0.9522984144589784,
+        "glsnet": 0.5550442856824633,
+        "dncnn": 0.6023546242414343
+      }
+    },
+    "D": {
+      "profile": "NTN-TDL-D",
+      "development_slot_counts": {
+        "train": 4096,
+        "val": 2048
+      },
+      "development_generation_seed": 802007,
+      "test_slots": 2048,
+      "test_generation_seed": 802011,
+      "test_snr_db_range": [
+        15.0,
+        25.0
+      ],
+      "validation_llr_scales": {
+        "joint_lmmse": 0.927520627608621,
+        "glsnet": 0.47236307182147913,
+        "dncnn": 0.7290310607684298
+      }
+    }
+  },
+  "nr": {
+    "band": "n256",
+    "direction": "downlink",
+    "bandwidth_mhz": 5.0,
+    "scs_khz": 15.0,
+    "n_rb": 6,
+    "bwp_start_rb": 0,
+    "n_fft": null,
+    "dmrs_type_a_position": 2,
+    "dmrs_additional_position": 0,
+    "dmrs_n_id": 0,
+    "n_scid": 0,
+    "dmrs_ports": [
+      1000
+    ]
+  },
+  "channel": {
+    "nr": 2,
+    "nt": 1,
+    "fc_ghz": 2.19,
+    "altitude_km": 600.0,
+    "elevation_deg": 30.0,
+    "scenario": "dense_urban",
+    "band": "S",
+    "ue_speed_kmh": 3.0,
+    "ds_ns": 300.0,
+    "shadow_sigma_db": 0.0,
+    "residual_cfo_hz": 0.0,
+    "satellite_doppler_precompensated": true,
+    "apply_ue_doppler": true,
+    "n_sinusoids": 32,
+    "ula_spacing_wavelengths": 0.5,
+    "rx_corr_coeff": 0.8,
+    "tx_corr_coeff": 0.0,
+    "los_tx_angle_deg": 0.0,
+    "los_rx_angle_deg": 0.0,
+    "los_phase_rad": null
+  },
+  "phy": {
+    "band": "n256",
+    "n_rb": 6,
+    "carrier_n_rb": 25,
+    "n_subcarriers": 72,
+    "bwp_start_rb": 0,
+    "n_fft": 512,
+    "scs_hz": 15000.0,
+    "sample_rate_hz": 7680000.0,
+    "dmrs_ports": [
+      1000
+    ],
+    "mu": 0,
+    "cp_lengths_seconds": [
+      5.208333333333334e-06,
+      4.6875000000000004e-06,
+      4.6875000000000004e-06,
+      4.6875000000000004e-06,
+      4.6875000000000004e-06,
+      4.6875000000000004e-06,
+      4.6875000000000004e-06,
+      5.208333333333334e-06,
+      4.6875000000000004e-06,
+      4.6875000000000004e-06,
+      4.6875000000000004e-06,
+      4.6875000000000004e-06,
+      4.6875000000000004e-06,
+      4.6875000000000004e-06
+    ],
+    "cp_lengths_samples": [
+      40,
+      36,
+      36,
+      36,
+      36,
+      36,
+      36,
+      40,
+      36,
+      36,
+      36,
+      36,
+      36,
+      36
+    ],
+    "symbol_times_seconds": [
+      3.854166666666667e-05,
+      0.00010989583333333333,
+      0.00018125,
+      0.00025260416666666666,
+      0.0003239583333333334,
+      0.00039531250000000005,
+      0.0004666666666666667,
+      0.0005385416666666667,
+      0.0006098958333333334,
+      0.0006812500000000001,
+      0.0007526041666666667,
+      0.0008239583333333333,
+      0.0008953125,
+      0.0009666666666666666
+    ],
+    "slot_start_seconds": 0.0,
+    "slot_duration_seconds": 0.0009999999999999998,
+    "nominal_slot_duration_seconds": 0.001,
+    "slots_per_subframe": 1,
+    "slots_per_frame": 10
+  },
+  "transmitter": {
+    "resources": {
+      "schema_version": 1,
+      "backend": "py3gpp==0.6.0",
+      "n_info_bits": 2536,
+      "G": 5832,
+      "qm": 6,
+      "target_rate": 0.455078125,
+      "n_layers": 1,
+      "rv": 0,
+      "nid": 0,
+      "rnti": 1,
+      "codeword_index": 0,
+      "scrambling_c_init": 32768,
+      "crc": "16",
+      "crc_length": 16,
+      "B": 2552,
+      "bg": 2,
+      "zc": 256,
+      "C": 1,
+      "cb_crc_length": 0,
+      "K": 2560,
+      "K_prime": 2552,
+      "F": 8,
+      "N": 12800,
+      "Ncb": 12800,
+      "k0": 0,
+      "E": [
+        5832
+      ],
+      "effective_information_rate": 0.4348422496570645,
+      "effective_tb_rate": 0.4375857338820302,
+      "modulation": "64QAM",
+      "harq_combining": false,
+      "limited_buffer_rate_matching": false,
+      "mcs_index": 18,
+      "mcs_table": "38.214-5.1.3.1-1",
+      "rate_x1024": 466,
+      "n_rb": 6,
+      "n_data_re": 972,
+      "n_re_per_prb": 162,
+      "n_re_per_prb_for_tbs": 156,
+      "cdm_groups_without_data": 1,
+      "dmrs_symbols": [
+        2
+      ],
+      "x_overhead": 0,
+      "resource_mapping": "symbol_then_subcarrier_C_order"
+    },
+    "coding_backend": {
+      "name": "py3gpp",
+      "version": "0.6.0",
+      "license": "AGPL-3.0",
+      "source": "https://github.com/catkira/py3gpp",
+      "numpy_version": "2.1.2",
+      "scipy_version": "1.16.3",
+      "decoder": "Normalized min-sum",
+      "scaling_factor": 0.75,
+      "encoder": "sionna"
+    },
+    "port": 1000,
+    "cdm_groups_without_data": 1,
+    "pdsch_to_dmrs_epre_db": 0.0,
+    "payload_order": "symbol then frequency then NR alternating I/Q bits"
+  },
+  "assumptions": {
+    "domain": "TS38.211 CP-OFDM waveform through continuous time-varying TDL and matched FFT",
+    "synchronization": "known timing; explicit satellite Doppler rotation followed by ideal receiver compensation",
+    "doppler": "UE Jakes diffuse spectrum (finite sinusoid approximation); LOS 0.7*f_D",
+    "cyclic_prefix": "normal CP generated; continuous signed-frequency fractional delays; maximum excess delay below CP",
+    "power": "unit ensemble small-scale power before optional shadowing; FSPL/clutter metadata only",
+    "snr": "nominal per-port pilot Es/N0 after large-scale link-budget normalization; Es=1; complex noise variance=10**(-SNR/10)",
+    "observations": "DM-RS extracted from the same received coded-data waveform; payload ICI retained",
+    "ls": "per-port true pilot locations, linear complex frequency/time interpolation with constant boundary extension",
+    "labels": "diagonal of the time-varying CP-OFDM operator, using the actual FFT-window tap mean",
+    "identity": "(generation_seed, profile_name, scenario_id); complete slots kept in a single split",
+    "exclusions": "no MAC/RRC/HARQ scheduling or RF nonlinearities; channel-estimation NR PHY experiment"
+  },
+  "standards": [
+    {
+      "document": "3GPP TR 38.811 V15.4.0",
+      "clauses": "6.9.2, Tables 6.9.2-1..4",
+      "url": "https://ftp.3gpp.org/Specs/archive/38_series/38.811/38811-f40.zip"
+    },
+    {
+      "document": "3GPP TR 38.901 V19.5.0",
+      "clauses": "7.7.2, 7.7.3, 7.7.5.2",
+      "url": "https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/19.05.00_60/tr_138901v190500p.pdf"
+    },
+    {
+      "document": "3GPP TS 38.211 V19.5.0",
+      "clauses": "4.2..4.4, 5.2.1, 5.3.1, 7.4.1.1",
+      "url": "https://www.etsi.org/deliver/etsi_ts/138200_138299/138211/19.05.00_60/ts_138211v190500p.pdf"
+    },
+    {
+      "document": "3GPP TS 38.101-5 V19.6.0",
+      "clauses": "5.2, 5.3, 5.4",
+      "url": "https://www.etsi.org/deliver/etsi_ts/138100_138199/13810105/19.06.00_60/ts_13810105v190600p.pdf"
+    },
+    {
+      "document": "3GPP TS 38.212 V19.4.0",
+      "clauses": "5/7: coding and rate matching"
+    },
+    {
+      "document": "3GPP TS 38.214 V19.5.0",
+      "clauses": "5.1.3: modulation, code rate and transport-block size"
+    }
+  ]
+}

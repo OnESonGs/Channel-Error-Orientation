@@ -1,0 +1,1018 @@
+{
+  "A": {
+    "contrasts": [
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_newD",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 3.1290705058356595e-05,
+        "lower_bound": 1.0535958465900263e-05,
+        "upper_bound": 5.226970901769369e-05,
+        "confirmed": true
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_base",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 5.113297970773433e-05,
+        "lower_bound": 3.071314756198121e-05,
+        "upper_bound": 7.195303714340803e-05,
+        "confirmed": true
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "interaction",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 2.864939808162447e-05,
+        "lower_bound": 9.544052210338316e-06,
+        "upper_bound": 4.824156532667817e-05,
+        "confirmed": true
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_MSE",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 3.768552250467329e-05,
+        "lower_bound": 1.6787684673765956e-05,
+        "upper_bound": 5.812467316820921e-05,
+        "confirmed": null
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_rotation",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 2.2098331109630075e-06,
+        "lower_bound": -1.070429988257314e-05,
+        "upper_bound": 1.4985370852731982e-05,
+        "confirmed": null
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_newD",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 0.0005909891189090423,
+        "lower_bound": 0.0005075963788935345,
+        "upper_bound": 0.0006767888689486205,
+        "confirmed": true
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_base",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 0.025391002674984307,
+        "lower_bound": 0.024377881530142365,
+        "upper_bound": 0.026438454103193683,
+        "confirmed": true
+      },
+      {
+        "base": "glsnet",
+        "comparison": "interaction",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": -5.565054441970482e-07,
+        "lower_bound": -1.6082419831782833e-05,
+        "upper_bound": 1.560765565756635e-05,
+        "confirmed": false
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_MSE",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": -3.487103780628931e-05,
+        "lower_bound": -5.3498532261309146e-05,
+        "upper_bound": -1.5934593957272153e-05,
+        "confirmed": null
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_rotation",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 0.025391002674984307,
+        "lower_bound": 0.024670836543105576,
+        "upper_bound": 0.02611839032017651,
+        "confirmed": null
+      },
+      {
+        "base": "dncnn",
+        "comparison": "newF_newD",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 0.0007251767117143907,
+        "lower_bound": 0.0006594757114429138,
+        "upper_bound": 0.0007935573572191478,
+        "confirmed": null
+      },
+      {
+        "base": "dncnn",
+        "comparison": "newF_base",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 0.034200188634388236,
+        "lower_bound": 0.03340956803790126,
+        "upper_bound": 0.034990465783244974,
+        "confirmed": null
+      },
+      {
+        "base": "dncnn",
+        "comparison": "interaction",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": -1.3375217027778385e-05,
+        "lower_bound": -2.2722100372377656e-05,
+        "upper_bound": -3.943709820908082e-06,
+        "confirmed": null
+      },
+      {
+        "base": "dncnn",
+        "comparison": "newF_MSE",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": -3.244705995775665e-05,
+        "lower_bound": -4.699590501263111e-05,
+        "upper_bound": -1.7868959954148926e-05,
+        "confirmed": null
+      },
+      {
+        "base": "dncnn",
+        "comparison": "newF_rotation",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 0.034200188634388236,
+        "lower_bound": 0.03340956803790126,
+        "upper_bound": 0.034990465783244974,
+        "confirmed": null
+      }
+    ],
+    "subgroups": {
+      "joint_lmmse/all": {
+        "RE_count": 3981312,
+        "slots": 4096,
+        "MSE_rate": 5.519290242376806,
+        "gain": 3.768552250465085e-05,
+        "interval": [
+          1.6962644443802604e-05,
+          5.840840056549909e-05
+        ]
+      },
+      "joint_lmmse/deep": {
+        "RE_count": 148081,
+        "slots": 856,
+        "MSE_rate": 3.372541401416239,
+        "gain": 0.00030221125030029496,
+        "interval": [
+          0.00011825663928116361,
+          0.0004861658613194263
+        ]
+      },
+      "joint_lmmse/low": {
+        "RE_count": 726115,
+        "slots": 2402,
+        "MSE_rate": 4.793727011942265,
+        "gain": 0.00012932668651008505,
+        "interval": [
+          6.448032638780603e-05,
+          0.00019417304663236408
+        ]
+      },
+      "joint_lmmse/moderate": {
+        "RE_count": 1603780,
+        "slots": 3603,
+        "MSE_rate": 5.635208509621,
+        "gain": -1.3451010139144185e-06,
+        "interval": [
+          -2.986625329178441e-05,
+          2.7176051263955573e-05
+        ]
+      },
+      "joint_lmmse/strong": {
+        "RE_count": 1503336,
+        "slots": 2781,
+        "MSE_rate": 5.957534029224435,
+        "gain": 9.004825233476382e-06,
+        "interval": [
+          -9.129477686515706e-07,
+          1.8922598235604337e-05
+        ]
+      },
+      "joint_lmmse/spectral_notch": {
+        "RE_count": 33691,
+        "slots": 355,
+        "MSE_rate": 2.9951175424382956,
+        "gain": 0.00027888352373929033,
+        "interval": [
+          -0.0001519785531637181,
+          0.0007097456006422988
+        ]
+      },
+      "joint_lmmse/no_spectral_notch": {
+        "RE_count": 3947621,
+        "slots": 4096,
+        "MSE_rate": 5.540832812556069,
+        "gain": 3.5627016417155866e-05,
+        "interval": [
+          1.5303864426598338e-05,
+          5.59501684077134e-05
+        ]
+      },
+      "glsnet/all": {
+        "RE_count": 3981312,
+        "slots": 4096,
+        "MSE_rate": 5.506644909326343,
+        "gain": -3.487103780630642e-05,
+        "interval": [
+          -5.358657951969005e-05,
+          -1.615549609292279e-05
+        ]
+      },
+      "glsnet/deep": {
+        "RE_count": 148081,
+        "slots": 856,
+        "MSE_rate": 3.338966109973941,
+        "gain": 0.0010667243276966517,
+        "interval": [
+          0.000828313805438372,
+          0.0013051348499549314
+        ]
+      },
+      "glsnet/low": {
+        "RE_count": 726115,
+        "slots": 2402,
+        "MSE_rate": 4.767271650691513,
+        "gain": -3.910853600164445e-05,
+        "interval": [
+          -0.00010389049610031532,
+          2.567342409702642e-05
+        ]
+      },
+      "glsnet/moderate": {
+        "RE_count": 1603780,
+        "slots": 3603,
+        "MSE_rate": 5.621423995087275,
+        "gain": -0.00013302989254204467,
+        "interval": [
+          -0.00015646255374430356,
+          -0.00010959723133978579
+        ]
+      },
+      "glsnet/strong": {
+        "RE_count": 1503336,
+        "slots": 2781,
+        "MSE_rate": 5.954835903102095,
+        "gain": -3.661597324908352e-05,
+        "interval": [
+          -4.611261605617517e-05,
+          -2.7119330441991863e-05
+        ]
+      },
+      "glsnet/spectral_notch": {
+        "RE_count": 33691,
+        "slots": 355,
+        "MSE_rate": 2.9445334916701094,
+        "gain": 0.001903066577372151,
+        "interval": [
+          0.001195701307480091,
+          0.002610431847264211
+        ]
+      },
+      "glsnet/no_spectral_notch": {
+        "RE_count": 3947621,
+        "slots": 4096,
+        "MSE_rate": 5.528511267766593,
+        "gain": -5.1410380411121986e-05,
+        "interval": [
+          -6.904221424417284e-05,
+          -3.3778546578071134e-05
+        ]
+      }
+    }
+  },
+  "B": {
+    "contrasts": [
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_newD",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 2.4495568547086826e-06,
+        "lower_bound": -2.527666426819067e-07,
+        "upper_bound": 5.2278536945456666e-06,
+        "confirmed": false
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_base",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 3.2504373705195735e-06,
+        "lower_bound": 9.282865794294948e-07,
+        "upper_bound": 5.658313456740668e-06,
+        "confirmed": true
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "interaction",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 2.42788951852898e-06,
+        "lower_bound": 1.2635952258055764e-06,
+        "upper_bound": 3.6389480382103513e-06,
+        "confirmed": null
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_MSE",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 3.2504373705195735e-06,
+        "lower_bound": 1.6081230024540794e-06,
+        "upper_bound": 4.955663510571278e-06,
+        "confirmed": null
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_rotation",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": -3.075358757059169e-06,
+        "lower_bound": -4.975290691991272e-06,
+        "upper_bound": -1.1688190076882697e-06,
+        "confirmed": null
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_newD",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 0.0007199286443784534,
+        "lower_bound": 0.0005370422900952296,
+        "upper_bound": 0.0009132871612468515,
+        "confirmed": true
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_base",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 0.06327613419570337,
+        "lower_bound": 0.058390961931731794,
+        "upper_bound": 0.06844779226597461,
+        "confirmed": true
+      },
+      {
+        "base": "glsnet",
+        "comparison": "interaction",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": -5.257205481391336e-05,
+        "lower_bound": -8.25002961731293e-05,
+        "upper_bound": -2.1042607942503383e-05,
+        "confirmed": null
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_MSE",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": -3.6781101297557635e-05,
+        "lower_bound": -7.657169427316974e-05,
+        "upper_bound": 2.8269515215743595e-06,
+        "confirmed": null
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_rotation",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 0.06051369063003256,
+        "lower_bound": 0.05737940243816342,
+        "upper_bound": 0.0637843184420972,
+        "confirmed": null
+      }
+    ],
+    "subgroups": {
+      "joint_lmmse/all": {
+        "RE_count": 1990656,
+        "slots": 2048,
+        "MSE_rate": 5.518020516933086,
+        "gain": 3.250437370526475e-06,
+        "interval": [
+          1.5755150762759666e-06,
+          4.925359664776984e-06
+        ]
+      },
+      "joint_lmmse/deep": {
+        "RE_count": 80440,
+        "slots": 342,
+        "MSE_rate": 3.2327838974345426,
+        "gain": 2.5782912198916333e-05,
+        "interval": [
+          4.616499243559099e-06,
+          4.694932515427357e-05
+        ]
+      },
+      "joint_lmmse/low": {
+        "RE_count": 333285,
+        "slots": 914,
+        "MSE_rate": 4.73632955360303,
+        "gain": 1.0549708663184787e-05,
+        "interval": [
+          3.661394992771187e-06,
+          1.7438022333598388e-05
+        ]
+      },
+      "joint_lmmse/moderate": {
+        "RE_count": 821567,
+        "slots": 1601,
+        "MSE_rate": 5.646951492742661,
+        "gain": 9.784407222629675e-07,
+        "interval": [
+          -7.672451202129155e-07,
+          2.7241265647388504e-06
+        ]
+      },
+      "joint_lmmse/strong": {
+        "RE_count": 755364,
+        "slots": 1262,
+        "MSE_rate": 5.966049376374328,
+        "gain": 1.0142254096404444e-07,
+        "interval": [
+          -4.256968228436458e-07,
+          6.285419047717346e-07
+        ]
+      },
+      "joint_lmmse/spectral_notch": {
+        "RE_count": 3201,
+        "slots": 44,
+        "MSE_rate": 2.0972657911353503,
+        "gain": 5.3145279864080444e-05,
+        "interval": [
+          -0.00013302499325863447,
+          0.00023931555298679536
+        ]
+      },
+      "joint_lmmse/no_spectral_notch": {
+        "RE_count": 1987455,
+        "slots": 2048,
+        "MSE_rate": 5.523529993060736,
+        "gain": 3.170076612258864e-06,
+        "interval": [
+          1.5322150732875186e-06,
+          4.807938151230209e-06
+        ]
+      },
+      "glsnet/all": {
+        "RE_count": 1990656,
+        "slots": 2048,
+        "MSE_rate": 5.351298774431599,
+        "gain": -3.67811012975448e-05,
+        "interval": [
+          -7.638098693524788e-05,
+          2.818784340158271e-06
+        ]
+      },
+      "glsnet/deep": {
+        "RE_count": 80440,
+        "slots": 342,
+        "MSE_rate": 2.8207420124053284,
+        "gain": 0.0033877814892516256,
+        "interval": [
+          0.0027621993178559936,
+          0.004013363660647257
+        ]
+      },
+      "glsnet/low": {
+        "RE_count": 333285,
+        "slots": 914,
+        "MSE_rate": 4.350809580305484,
+        "gain": 0.00011873037041020327,
+        "interval": [
+          -4.1489294215196336e-05,
+          0.00027895003503560287
+        ]
+      },
+      "glsnet/moderate": {
+        "RE_count": 821567,
+        "slots": 1601,
+        "MSE_rate": 5.468771498741093,
+        "gain": -0.000385461071231186,
+        "interval": [
+          -0.0004300651199450889,
+          -0.00034085702251728314
+        ]
+      },
+      "glsnet/strong": {
+        "RE_count": 755364,
+        "slots": 1262,
+        "MSE_rate": 5.934453800761867,
+        "gain": -9.084443867324146e-05,
+        "interval": [
+          -0.00010368941821739414,
+          -7.799945912908879e-05
+        ]
+      },
+      "glsnet/spectral_notch": {
+        "RE_count": 3201,
+        "slots": 44,
+        "MSE_rate": 1.5517187928379494,
+        "gain": 0.010282952824555143,
+        "interval": [
+          0.005125121176797743,
+          0.015440784472312542
+        ]
+      },
+      "glsnet/no_spectral_notch": {
+        "RE_count": 1987455,
+        "slots": 2048,
+        "MSE_rate": 5.357418387464891,
+        "gain": -5.340209060128056e-05,
+        "interval": [
+          -9.197657995882645e-05,
+          -1.4827601243734669e-05
+        ]
+      }
+    }
+  },
+  "C": {
+    "contrasts": [
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_newD",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": -3.6070700298353187e-07,
+        "lower_bound": -1.7287850174386896e-06,
+        "upper_bound": 9.763822788077499e-07,
+        "confirmed": false
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_base",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 8.637563355890637e-05,
+        "lower_bound": 3.501370847789338e-05,
+        "upper_bound": 0.00013757812365700005,
+        "confirmed": true
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "interaction",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": -1.2195905512921157e-08,
+        "lower_bound": -1.73439526014057e-07,
+        "upper_bound": 1.4653394411692598e-07,
+        "confirmed": null
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_MSE",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 8.637563355890637e-05,
+        "lower_bound": 4.984525754859164e-05,
+        "upper_bound": 0.00012292891274460574,
+        "confirmed": null
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_rotation",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 8.637563355890637e-05,
+        "lower_bound": 4.984525754859164e-05,
+        "upper_bound": 0.00012292891274460574,
+        "confirmed": null
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_newD",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 0.0002793734913004943,
+        "lower_bound": 0.00022516279038758277,
+        "upper_bound": 0.00033637868016488765,
+        "confirmed": true
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_base",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 0.06120402736757462,
+        "lower_bound": 0.05677485868680402,
+        "upper_bound": 0.06592796260548307,
+        "confirmed": true
+      },
+      {
+        "base": "glsnet",
+        "comparison": "interaction",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 5.292409635850037e-07,
+        "lower_bound": -5.357746195748416e-07,
+        "upper_bound": 1.6608641199528625e-06,
+        "confirmed": null
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_MSE",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": -1.0785628032183685e-05,
+        "lower_bound": -1.4289207805343267e-05,
+        "upper_bound": -7.428418239322232e-06,
+        "confirmed": null
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_rotation",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 0.06120402736757462,
+        "lower_bound": 0.0579703128275478,
+        "upper_bound": 0.06450028800936651,
+        "confirmed": null
+      }
+    ],
+    "subgroups": {
+      "joint_lmmse/all": {
+        "RE_count": 1990656,
+        "slots": 2048,
+        "MSE_rate": 5.822151315106545,
+        "gain": 8.637563355891166e-05,
+        "interval": [
+          4.984436250789057e-05,
+          0.00012290690460993274
+        ]
+      },
+      "joint_lmmse/deep": {
+        "RE_count": 192,
+        "slots": 1,
+        "MSE_rate": 3.972730324643843,
+        "gain": -0.0002336552664178221,
+        "interval": null
+      },
+      "joint_lmmse/low": {
+        "RE_count": 40951,
+        "slots": 83,
+        "MSE_rate": 4.891204923112514,
+        "gain": 0.0010973389099597343,
+        "interval": [
+          0.0007013271364936032,
+          0.0014933506834258654
+        ]
+      },
+      "joint_lmmse/moderate": {
+        "RE_count": 1046377,
+        "slots": 1337,
+        "MSE_rate": 5.756114889005191,
+        "gain": 0.00015880263430994914,
+        "interval": [
+          0.00010357072901975323,
+          0.00021403453960014505
+        ]
+      },
+      "joint_lmmse/strong": {
+        "RE_count": 903136,
+        "slots": 1158,
+        "MSE_rate": 5.941266566811018,
+        "gain": -4.3310769113512756e-05,
+        "interval": [
+          -8.064213359095913e-05,
+          -5.979404636066385e-06
+        ]
+      },
+      "joint_lmmse/spectral_notch": {
+        "RE_count": 0,
+        "slots": 0,
+        "MSE_rate": null,
+        "gain": null,
+        "interval": null
+      },
+      "joint_lmmse/no_spectral_notch": {
+        "RE_count": 1990656,
+        "slots": 2048,
+        "MSE_rate": 5.822151315106545,
+        "gain": 8.637563355891166e-05,
+        "interval": [
+          4.984436250789057e-05,
+          0.00012290690460993274
+        ]
+      },
+      "glsnet/all": {
+        "RE_count": 1990656,
+        "slots": 2048,
+        "MSE_rate": 5.646829474575602,
+        "gain": -1.0785628032179973e-05,
+        "interval": [
+          -1.4231999285074774e-05,
+          -7.3392567792851725e-06
+        ]
+      },
+      "glsnet/deep": {
+        "RE_count": 192,
+        "slots": 1,
+        "MSE_rate": 3.092028764375598,
+        "gain": -0.0013780103324087494,
+        "interval": null
+      },
+      "glsnet/low": {
+        "RE_count": 40951,
+        "slots": 83,
+        "MSE_rate": 4.230087144748013,
+        "gain": -0.0004554909832239776,
+        "interval": [
+          -0.0005911821212051438,
+          -0.00031979984524281146
+        ]
+      },
+      "glsnet/moderate": {
+        "RE_count": 1046377,
+        "slots": 1337,
+        "MSE_rate": 5.520433106716291,
+        "gain": -1.7463832689366598e-05,
+        "interval": [
+          -2.4523301824359128e-05,
+          -1.040436355437407e-05
+        ]
+      },
+      "glsnet/strong": {
+        "RE_count": 903136,
+        "slots": 1158,
+        "MSE_rate": 5.858055457258887,
+        "gain": 1.740675484068291e-05,
+        "interval": [
+          1.2839682687347104e-05,
+          2.1973826994018714e-05
+        ]
+      },
+      "glsnet/spectral_notch": {
+        "RE_count": 0,
+        "slots": 0,
+        "MSE_rate": null,
+        "gain": null,
+        "interval": null
+      },
+      "glsnet/no_spectral_notch": {
+        "RE_count": 1990656,
+        "slots": 2048,
+        "MSE_rate": 5.646829474575602,
+        "gain": -1.0785628032179973e-05,
+        "interval": [
+          -1.4231999285074774e-05,
+          -7.3392567792851725e-06
+        ]
+      }
+    }
+  },
+  "D": {
+    "contrasts": [
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_newD",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": -4.651147034999675e-06,
+        "lower_bound": -9.805613731215446e-06,
+        "upper_bound": 3.0363942369631805e-07,
+        "confirmed": false
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_base",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 4.105527593806181e-05,
+        "lower_bound": 2.352370904226134e-06,
+        "upper_bound": 7.99100541849047e-05,
+        "confirmed": true
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "interaction",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": -9.332990143729944e-07,
+        "lower_bound": -1.8334802278466213e-06,
+        "upper_bound": -3.590458849418684e-08,
+        "confirmed": null
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_MSE",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 4.105527593806181e-05,
+        "lower_bound": 1.3971088906206445e-05,
+        "upper_bound": 6.786915604266441e-05,
+        "confirmed": null
+      },
+      {
+        "base": "joint_lmmse",
+        "comparison": "newF_rotation",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 4.105527593806181e-05,
+        "lower_bound": 1.3971088906206445e-05,
+        "upper_bound": 6.786915604266441e-05,
+        "confirmed": null
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_newD",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 0.00038170158139807673,
+        "lower_bound": 0.0002989006223015292,
+        "upper_bound": 0.0004673958939121212,
+        "confirmed": true
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_base",
+        "role": "primary",
+        "tail": 0.002777777777777778,
+        "mean_gain": 0.07592854167669982,
+        "lower_bound": 0.07101547251627818,
+        "upper_bound": 0.08119390251581043,
+        "confirmed": true
+      },
+      {
+        "base": "glsnet",
+        "comparison": "interaction",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 9.462174239377279e-07,
+        "lower_bound": -3.3063350710233754e-06,
+        "upper_bound": 5.651170423227906e-06,
+        "confirmed": null
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_MSE",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 1.6325159453209294e-05,
+        "lower_bound": 8.589396706030578e-06,
+        "upper_bound": 2.4591324803593013e-05,
+        "confirmed": null
+      },
+      {
+        "base": "glsnet",
+        "comparison": "newF_rotation",
+        "role": "secondary",
+        "tail": 0.025,
+        "mean_gain": 0.07592854167669982,
+        "lower_bound": 0.07242425865695155,
+        "upper_bound": 0.07948599009962384,
+        "confirmed": null
+      }
+    ],
+    "subgroups": {
+      "joint_lmmse/all": {
+        "RE_count": 1990656,
+        "slots": 2048,
+        "MSE_rate": 5.7569947326610285,
+        "gain": 4.1055275938056075e-05,
+        "interval": [
+          1.3748019579991828e-05,
+          6.836253229612033e-05
+        ]
+      },
+      "joint_lmmse/deep": {
+        "RE_count": 10179,
+        "slots": 66,
+        "MSE_rate": 3.4824418896455285,
+        "gain": 0.0002540787778773314,
+        "interval": [
+          -0.0005117494178696715,
+          0.0010199069736243343
+        ]
+      },
+      "joint_lmmse/low": {
+        "RE_count": 107366,
+        "slots": 377,
+        "MSE_rate": 4.845586780075394,
+        "gain": 0.0002362538480190712,
+        "interval": [
+          4.68274037682365e-05,
+          0.00042568029226990587
+        ]
+      },
+      "joint_lmmse/moderate": {
+        "RE_count": 1013472,
+        "slots": 1636,
+        "MSE_rate": 5.714446561861206,
+        "gain": 5.721284856953654e-05,
+        "interval": [
+          1.5914100510485938e-05,
+          9.851159662858713e-05
+        ]
+      },
+      "joint_lmmse/strong": {
+        "RE_count": 859639,
+        "slots": 1441,
+        "MSE_rate": 5.947921714083697,
+        "gain": -4.895761144111279e-06,
+        "interval": [
+          -2.3200778851140935e-05,
+          1.3409256562918375e-05
+        ]
+      },
+      "joint_lmmse/spectral_notch": {
+        "RE_count": 202,
+        "slots": 4,
+        "MSE_rate": 1.869643037992625,
+        "gain": 0.0006621966374017586,
+        "interval": null
+      },
+      "joint_lmmse/no_spectral_notch": {
+        "RE_count": 1990454,
+        "slots": 2048,
+        "MSE_rate": 5.757389238156922,
+        "gain": 4.0992239789008775e-05,
+        "interval": [
+          1.3686164174230848e-05,
+          6.82983154037867e-05
+        ]
+      },
+      "glsnet/all": {
+        "RE_count": 1990656,
+        "slots": 2048,
+        "MSE_rate": 5.486248308993348,
+        "gain": 1.6325159453178794e-05,
+        "interval": [
+          8.349587814646563e-06,
+          2.4300731091711023e-05
+        ]
+      },
+      "glsnet/deep": {
+        "RE_count": 10179,
+        "slots": 66,
+        "MSE_rate": 2.4873026650847843,
+        "gain": 0.0014193726645374582,
+        "interval": [
+          0.000923569966494021,
+          0.0019151753625808953
+        ]
+      },
+      "glsnet/low": {
+        "RE_count": 107366,
+        "slots": 377,
+        "MSE_rate": 3.9898910690101346,
+        "gain": 0.0004615222456138371,
+        "interval": [
+          0.0003439485165399333,
+          0.000579095974687741
+        ]
+      },
+      "glsnet/moderate": {
+        "RE_count": 1013472,
+        "slots": 1636,
+        "MSE_rate": 5.368524999565889,
+        "gain": -4.17637602489806e-06,
+        "interval": [
+          -1.2902146992527345e-05,
+          4.549394942731225e-06
+        ]
+      },
+      "glsnet/strong": {
+        "RE_count": 859639,
+        "slots": 1441,
+        "MSE_rate": 5.8474388052242645,
+        "gain": -3.172165873787746e-05,
+        "interval": [
+          -3.5742352741289206e-05,
+          -2.7700964734465714e-05
+        ]
+      },
+      "glsnet/spectral_notch": {
+        "RE_count": 202,
+        "slots": 4,
+        "MSE_rate": 0.8875879997097567,
+        "gain": 0.006519323729702653,
+        "interval": null
+      },
+      "glsnet/no_spectral_notch": {
+        "RE_count": 1990454,
+        "slots": 2048,
+        "MSE_rate": 5.486715001206519,
+        "gain": 1.5665206642820825e-05,
+        "interval": [
+          7.817634996754875e-06,
+          2.3512778288886776e-05
+        ]
+      }
+    }
+  }
+}
