@@ -45,4 +45,4 @@ The first command computes bit LLRs, excess loss and orientation fractions from 
 
 ## 中文说明
 
-在仓库根目录安装依赖，运行上面的理论、波形统计和绘图命令，即可在 `outputs/` 得到两张 PDF 及对应的数值结果。接收机对照检验写入 `outputs/controls.json`。波形部分使用已冻结的接收机输出；完整波形生成和网络训练不在本仓库的复现范围内。
+在仓库根目录安装依赖，运行上面的理论、波形统计和绘图命令，即可在 `outputs/` 得到两张 PDF 及对应的数值结果。接收机对照检验写入 `outputs/controls.json`。波形部分使用已冻结的接收机输出；不包括完整的波形生成和网络训练。
